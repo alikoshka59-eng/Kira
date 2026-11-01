@@ -1,1 +1,76 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кира</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#e4e6e9; --bg2:#d3d6da; --text:#15171a; --muted:#4a4f57; --red:#b0121b; --line:#9aa0a8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0b0c0e;--bg2:#15171b;--text:#e8e9eb;--muted:#9096a0;--red:#d6202b;--line:#2c3036;}
+}
+:root[data-theme="dark"]{--bg:#0b0c0e;--bg2:#15171b;--text:#e8e9eb;--muted:#9096a0;--red:#d6202b;--line:#2c3036;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Special Elite','Courier New',monospace;line-height:1.7;
+  background-image:repeating-linear-gradient(135deg,transparent 0 14px,rgba(128,128,140,.06) 14px 15px);}
+h1,h2{font-family:'Oswald','Arial Narrow',Impact,sans-serif;text-transform:uppercase;letter-spacing:.08em;margin:0}
+.hero{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px;border-bottom:4px solid var(--red)}
+.star{width:96px;height:96px;fill:var(--red);filter:drop-shadow(0 0 14px rgba(214,32,43,.45))}
+.hero h1{font-size:clamp(3.4rem,18vw,7rem);font-weight:700;margin-top:16px;line-height:1}
+.hero p{color:var(--muted);letter-spacing:.2em;text-transform:uppercase;font-size:.85rem;margin-top:14px}
+.tag{margin-top:28px;padding:6px 14px;border:1px solid var(--red);color:var(--red);font-size:.75rem;letter-spacing:.25em}
+main{max-width:640px;margin:0 auto;padding:24px 22px 64px}
+section{margin-top:44px;padding:24px 22px;background:var(--bg2);border-left:4px solid var(--red);position:relative}
+section::before{content:attr(data-n);position:absolute;top:10px;right:14px;font-family:'Oswald',sans-serif;font-size:.8rem;color:var(--line);letter-spacing:.2em}
+h2{font-size:1.5rem;font-weight:600;margin-bottom:12px}
+section p{margin:0 0 12px}
+.big{text-align:center;border-left:0;border-top:4px solid var(--red);border-bottom:4px solid var(--red)}
+.big h2{color:var(--red);font-size:2rem}
+.big p{font-size:1.1rem}
+footer{text-align:center;color:var(--muted);font-size:.8rem;letter-spacing:.2em;padding:0 24px 40px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4 61 38 97 38 68 59 79 94 50 73 21 94 32 59 3 38 39 38Z"/></svg>
+  <h1>Кира</h1>
+  <p>Для той, кто держит фронт</p>
+  <div class="tag">ДОСЬЕ · ОСОБО ВАЖНЫЙ ЧЕЛОВЕК</div>
+</header>
+<main>
+  <section data-n="01">
+    <h2>Марвел Райвалс</h2>
+    <p>Кира, ты реально хорошо играешь в Марвел Райвалс. Иногда я просто смотрю, как ты всё разруливаешь в замесе, и думаю: ну вот как у неё это получается так спокойно?</p>
+    <p>С тобой в команде я всегда чувствую, что мы вытащим.</p>
+  </section>
+  <section data-n="02">
+    <h2>Мобайл Легендс</h2>
+    <p>В Мобайл Легендс ты тоже здорово играешь. Другая игра, другое управление, а ты всё равно молодец. За что ни берёшься, у тебя выходит, и это правда круто.</p>
+  </section>
+  <section data-n="03">
+    <h2>Дота. Жду тебя</h2>
+    <p>Я до сих пор жду, когда ты снова сможешь поиграть со мной в доту. Без тебя катки уже не те, чего-то не хватает. Твой слот в команде я никому не отдавал.</p>
+    <p>Как сможешь, просто напиши. Я буду на месте.</p>
+  </section>
+  <section data-n="04">
+    <h2>С тобой комфортно</h2>
+    <p>С тобой легко. Можно молчать, можно болтать о ерунде, можно проигрывать катку за каткой, и всё равно хорошо. Рядом с тобой я не напрягаюсь и не надо быть кем-то другим.</p>
+    <p>Это редкая вещь, и я её очень ценю.</p>
+  </section>
+  <section class="big" data-n="05">
+    <h2>Ты мне дорога</h2>
+    <p>Очень.</p>
+    <p>Правда очень. Ты добрая, настоящая и просто классная. Мне важно, как у тебя дела и что у тебя на душе. Даже если иногда не получается сказать это нормальными словами, знай, что ты для меня много значишь.</p>
+    <p>Спасибо, что ты есть.</p>
+  </section>
+</main>
+<footer>Кира, ты лучшая. Жду тебя в лобби.</footer>
+</body>
+</html>
